@@ -13,4 +13,4 @@ for i in range(len(a)):
 avg=sum1/n
 
 
-print(sum1,avg,sep=" ")
+print(f"{sum1} {avg:.1f}")
