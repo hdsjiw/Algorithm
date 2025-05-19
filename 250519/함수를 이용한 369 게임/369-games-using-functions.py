@@ -5,11 +5,12 @@ num=0
 def magic_num(n):
     return n%3==0 or contain_num(n)
 
-
 def contain_num(n):
-    n1=n//10
-    n2=n%10
-    return (n1==3) or (n1==6) or (n1==9) or(n2==3) or (n2==6) or (n2==9)
+    # 한 자리 숫자이면 3, 6, 9 중 하나인지 체크
+    if n < 10:
+        return n in [3, 6, 9]
+    # 마지막 자리수 확인 및 나머지 자리수에 대해 재귀적으로 확인
+    return (n % 10 in [3, 6, 9]) or (n//10 in [3,6,9])
 
 
 
