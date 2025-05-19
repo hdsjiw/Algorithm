@@ -10,7 +10,7 @@ def contain_num(n):
     if n < 10:
         return n in [3, 6, 9]
     # 마지막 자리수 확인 및 나머지 자리수에 대해 재귀적으로 확인
-    return (n % 10 in [3, 6, 9]) or (n//10 in [3,6,9])
+    return (n % 10 in [3, 6, 9]) or contain_num(n // 10)
 
 
 
