@@ -8,9 +8,6 @@ def perfact_num(n):
 
 
 for i in range(a,b+1):
-    if perfact_num(i):
-        # 아무 명령어
-        i=i
-    else:
+    if not perfact_num(i):
         num+=1
 print(num)
