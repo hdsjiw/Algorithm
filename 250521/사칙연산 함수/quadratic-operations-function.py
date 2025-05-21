@@ -14,6 +14,9 @@ def operation(a,o,c):
     elif o=="/":
         return(int(a/c))
     else:
-        return "False"
+        return False
 
-print(f"{a} {o} {c} = {operation(a,o,c)}")
+if operation(a,o,c):
+    print(f"{a} {o} {c} = {operation(a,o,c)}")
+else:
+    print("False")
