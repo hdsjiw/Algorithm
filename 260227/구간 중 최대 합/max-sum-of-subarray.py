@@ -4,7 +4,7 @@ arr = list(map(int, input().split()))
 # Please write your code here.
 max_val=0
 
-for i in range(n-k):
+for i in range(n-k+1):
     tem=arr[i:i+k]
     sum_tem=sum(tem)
     
